@@ -1,0 +1,213 @@
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background: #dfe6ef;
+    margin: 0;
+    padding: 20px;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main-title {
+    background: linear-gradient(to right, #1f3c5b, #2f5d8a);
+    color: white;
+    padding: 18px;
+    border-radius: 10px;
+}
+
+/* MAIN LAYOUT */
+.main {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+}
+
+/* LEFT & RIGHT */
+.left, .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* MAKE LEFT BOXES EQUAL HEIGHT */
+.left {
+    justify-content: space-between;
+}
+
+.left .card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* CARDS */
+.card {
+    background: #f7f9fc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+/* CARD HEADERS */
+.card h3 {
+    background: linear-gradient(to right, #2f5d8a, #3f77a8);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 6px;
+    margin-top: 0;
+}
+
+/* TEXT SIZE IN LEFT */
+.left .card ul,
+.instructions-card p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* TASK LIST */
+.task-card ul {
+    padding-left: 20px;
+}
+
+/* INSTRUCTIONS */
+.instructions-card {
+    padding: 15px;
+}
+
+.instructions-card .step {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+/* NUMBER BOX */
+.instructions-card .step span {
+    background: #2f5d8a;
+    color: white;
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* TEXT */
+.instructions-card p {
+    margin: 0;
+}
+
+.instructions-card small {
+    display: block;
+    font-size: 13px;
+    color: #555;
+}
+
+/* CHECKLIST */
+.checklist {
+    list-style: none;
+    padding: 0;
+}
+
+.checklist li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+}
+
+.checklist li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: green;
+    font-weight: bold;
+}
+
+/* RIGHT SIDE STRETCH */
+.right {
+    display: flex;
+    flex-direction: column;
+}
+
+.right .card:first-child {
+    flex: 1;
+}
+
+/* BLOG BOX */
+.blog-box {
+    text-align: center;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.subtitle {
+    color: gray;
+    margin-bottom: 10px;
+}
+
+/* BUTTON */
+button {
+    background: linear-gradient(to right, #4a90e2, #357abd);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin: 10px 0;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* IMAGE */
+img {
+    width: 100%;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+}
+
+table, th, td {
+    border: 1px solid #bbb;
+}
+
+th {
+    background: #2f5d8a;
+    color: white;
+}
+
+td, th {
+    padding: 8px;
+}
+
+/* MEDIA */
+video, audio {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* IFRAME BOX */
+.iframe-box {
+    background: #eee;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 10px;
+}
